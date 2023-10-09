@@ -1,0 +1,877 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    transition: all .2s ease;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e84242;
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+.header {
+    position: absolute;
+    width: 85%;
+}
+
+#about-header {
+    position: relative;
+}
+
+
+
+/*Header Start */
+.header .menu .logo {
+    height: 10rem;
+    padding-left: 2rem;
+    cursor: pointer;
+}
+
+.header .menu .logo img {
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.container {
+    margin: 2rem 8%;
+
+}
+
+.header .menu {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30rem;
+}
+
+.header .menu .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.header .menu .links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.6rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid transparent;
+}
+
+.header .menu .links a:hover,
+.header .menu .links .active {
+    border-color: #e84242;
+    padding-bottom: 0.5rem;
+}
+
+.header .menu .marketing {
+    margin-right: 2rem;
+    font-size: 2.5rem;
+    display: flex;
+    column-gap: 2rem;
+}
+
+/*Header End */
+a {
+    text-decoration: none;
+
+}
+
+.btn {
+
+    width: 150px;
+    height: 50 px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 50rem;
+    padding: 1rem 1rem;
+    font-size: 2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+
+
+/*Home Start*/
+
+
+
+.home {
+    color: white;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(images/home.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home .icerik {
+    max-width: 60rem;
+}
+
+.home h3 {
+    font-size: 6rem;
+}
+
+.home p {
+    font-size: 2rem;
+    color: #ccc;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.our {
+    margin-top: 2rem;
+    color: white;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.headers {
+    color: white;
+    font-size: 4rem;
+    margin-top: 6rem;
+    border-bottom: .1rem solid white;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.headers span {
+    color: black;
+}
+
+.our .headers {
+    color: white;
+
+}
+
+/*Home End*/
+
+/* Our Menu  Star*/
+
+
+.menus .box-con {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
+    gap: 2rem;
+    row-gap: 1.5rem;
+    width: 100%;
+}
+
+.menus .box-con .box {
+    background-color: white;
+    border-radius: 3rem;
+    width: 38rem;
+    height: 53rem
+}
+
+.menus .box-con .box .resim {
+    text-align: center;
+}
+
+.menus .box-con .box .icerik {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-left: 8%;
+
+}
+
+.menus .box-con .box .icerik span {
+    font-size: 2.5rem;
+}
+
+.menus .box-con .box .icerik h3 {
+    font-size: 4rem;
+}
+
+.menus .box-con .box .icerik .price span {
+    font-size: x-large;
+    font-weight: 500;
+}
+
+.menus .box-con .box .icerik .price s {
+    font-size: large;
+    font-weight: 300;
+}
+
+.menus .box-con .box .altkisim {
+    margin: 8%;
+}
+
+
+.menus .box-con .box .resim img {
+    height: 30rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Our Menu End*/
+
+/* Producs Our Start*/
+.products .products-boxs {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+}
+
+.products .products-boxs .products-box {
+    margin-top: 2rem;
+    background-color: white;
+    height: 65rem;
+    width: 50rem;
+    border-radius: 3rem;
+
+}
+
+.products .products-boxs .products-box .up-menu {
+    padding-top: 3rem;
+    margin-left: 8%;
+
+}
+
+.products .products-boxs .products-box .resim {
+    height: 400px;
+    width: 100%;
+
+}
+
+.products .products-boxs .products-box.dark {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    padding-bottom: 8%;
+    background-image: url(images/dark-product.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+.products .products-boxs .products-box .up-menu span {
+    font-size: 1.5rem;
+}
+
+
+.products .products-boxs .products-box .up-menu h3 {
+    font-size: 3rem;
+    cursor: pointer;
+
+}
+
+
+.products .products-boxs .products-box img {
+    height: 100%;
+
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+}
+
+.products .products-boxs .products-box .down-menu {
+
+    display: flex;
+    margin-top: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+}
+
+.products .products-boxs .products-box .down-menu .left {
+    display: flex;
+    flex-direction: column;
+}
+
+.products .products-boxs .products-box .down-menu .left span:last-child {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.products .products-boxs .products-box .down-menu .left span:first-child {
+    font-size: 3rem;
+
+}
+
+.fa-solid.fa-plus {
+    color: #e84242;
+    border: .2rem solid #e84242;
+    border-radius: 50%;
+    padding: 2rem;
+    font-weight: bold;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+
+.about-us .about-wrapper {
+    margin-top: 2rem;
+    display: flex;
+    column-gap: 2rem;
+
+}
+
+.about-us .about-wrapper .l-wr {
+    flex-basis: 50%;
+    border-radius: 2rem;
+
+
+}
+
+.about-us .about-wrapper .l-wr img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+
+}
+
+.about-us .about-wrapper .r-wr {
+    flex-basis: 50%;
+    color: white;
+
+
+}
+
+.checked {
+    color: yellow;
+}
+
+.about-us .about-wrapper .r-wr h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.about-us .about-wrapper .r-wr p {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin-bottom: 6rem;
+    opacity: 0.7;
+}
+
+.fa.fa-star {
+    font-size: 2.4rem;
+}
+
+/* Producs Our End*/
+
+/*Customer Start */
+.customers {
+    margin-top: 2rem;
+}
+
+.customers .customer-boxs {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 2rem;
+
+}
+
+.customers .customer-boxs .customer-box {
+    border-radius: 3rem;
+    background-color: white;
+    width: 50rem;
+    height: 60rem;
+    text-align: center;
+
+}
+
+.customers .customer-boxs .customer-box p {
+    font-size: 1.5rem;
+    margin: 0 8%;
+    line-height: 3rem;
+    margin-bottom: 4rem;
+
+}
+
+.customers .customer-boxs .customer-box .c-resim {
+    width: 50rem;
+    height: 25rem;
+
+}
+
+.customers .customer-boxs .customer-box .c-resim img {
+    width: 225px;
+    height: 225px;
+    object-fit: contain;
+}
+
+#avatar {
+    display: block;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #e84242;
+}
+
+#avatars {
+    height: 70px;
+
+    border-radius: 50%;
+}
+
+/*Customer End */
+
+
+
+/*Contact Start */
+.contact .con-row {
+    display: flex;
+    margin-top: 3rem;
+}
+
+.col {
+    flex-basis: 50%;
+}
+
+iframe {
+    width: 100%;
+    height: 50rem;
+    border: none;
+
+
+}
+
+.contact .con-row .col.right {
+    color: white;
+    background-color: black;
+}
+
+.contact .con-row .col.right .InputBox {
+    display: flex;
+    background-color: black;
+    border: 0.1rem solid rgba(255, 255, 255, 0.4);
+    padding: 1rem;
+    margin: 0 7%;
+
+}
+
+.contact .con-row .col.right .InputBox i {
+    padding-right: 3rem;
+    font-size: 5rem;
+
+}
+
+form input {
+    width: 100%;
+    background-color: black;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+
+
+
+.contact .con-row .col.right h3 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    padding: 5rem;
+}
+
+.contact .con-row .col.right .but {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact .con-row .col.right .but a {
+    background-color: white;
+    color: #e84242;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+
+
+
+/*Customer End */
+
+
+
+/*Blogg Star */
+
+
+
+
+.blog-content {
+    margin-top: 3rem;
+    border-top-right-radius: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+    row-gap: 3rem;
+}
+
+.content {
+    background-color: white;
+    width: 50rem;
+    height: 48rem;
+    border-radius: 3rem;
+}
+
+.content:hover {
+    transform: scale(1.1);
+
+}
+
+.blog-content .content .resim {
+    background-color: white;
+    width: 50rem;
+    height: auto;
+    object-fit: cover;
+    border-radius: 3rem;
+
+
+}
+
+.blog-content .content .resim img {
+
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 3rem;
+    border-top-left-radius: 3rem;
+}
+
+.blog-content .content .aciklama {
+    margin-left: 8%;
+}
+
+.blog-content .content .aciklama h3 {
+    font-size: 2rem;
+    padding-top: 1rem;
+    font-weight: 400;
+
+
+}
+
+.blog-content .content .aciklama span {
+    font-size: 1.8rem;
+}
+
+.blog-content .content .aciklama p {
+    padding-top: 1rem;
+    font-size: 1.4rem;
+    opacity: 0.7;
+    padding-bottom: 4rem;
+}
+
+/*Blogs End */
+
+/* Footer Start */
+.footer {
+    width: 100%;
+    height: 40rem;
+    background-color: black;
+    color: white;
+}
+
+.footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.footer .footer-container .search input {
+    padding: 2rem 9rem;
+    border-radius: 3rem;
+    border: none;
+    margin-right: 1rem;
+}
+
+.btn.x {
+    background-color: #e84242;
+}
+
+.footer .footer-container .f-links {
+    width: 5rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    column-gap: 1.3rem;
+
+}
+
+.footer .footer-container .f-links i {
+    font-size: 3.5rem;
+    border: 1px solid #8d99ae;
+    padding: 1rem;
+    border-radius: 40%;
+}
+
+.footer .footer-container .f-links i:hover {
+    transform: scale(1.1);
+    background-color: #e84242;
+}
+
+.footer .footer-container .f-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+    padding: 3rem;
+}
+
+.footer .footer-container .f-menu .btn.f-btn {
+    border: 1px solid #8d99ae;
+    background-color: #e84242;
+    border-radius: 0;
+}
+
+.footer .footer-container .f-menu .btn.f-btn:hover {
+
+    background-color: black;
+
+}
+
+.footer .footer-container p {
+    font-size: 3rem;
+}
+
+.footer .footer-container p span {
+    font-size: 3rem;
+    color: #e84242;
+
+}
+
+.footer .footer-container .f-menu .btn.f-btn.active {
+    background-color: black;
+}
+
+#about {
+    margin-top: 2rem;
+}
+
+/* Footer End */
+
+
+/* Responsive Start */
+
+@media (max-width:1670px) {}
+
+@media (max-width:800px) {
+    .header .menu .links a {
+        font-size: 1rem;
+    }
+
+    .header .menu .marketing {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width:600px) {
+    .header .menu .links {
+        display: none;
+    }
+
+    .header .menu .marketing {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:500px) {
+    .menus.container .box-con .box .resim img {
+        height: 20rem;
+    }
+
+    .menus .box-con .box {
+        width: 28rem;
+        height: 41rem;
+    }
+
+    .menus .box-con .box .icerik h3 {
+        font-size: 3rem;
+    }
+
+    .products .products-boxs .products-box {
+        height: 54rem;
+        width: 30rem;
+    }
+
+    .products .products-boxs .products-box .resim {
+        height: 30rem;
+    }
+
+    .products .products-boxs .products-box img {
+        height: 30rem;
+    }
+
+    .products .products-boxs .products-box .up-menu h3 {
+        font-size: 2rem;
+    }
+
+    .about-us .about-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-us .about-wrapper .l-wr img {
+        width: 87%;
+    }
+
+    .about-us .about-wrapper .r-wr h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-us .about-wrapper .r-wr p {
+        font-size: 1rem;
+        line-height: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .about-us .about-wrapper .r-wr {
+        width: 87%;
+    }
+
+    .btn {
+        font-size: 1.5rem;
+    }
+
+    .customers .customer-boxs .customer-box {
+        width: 32rem;
+        height: 65rem;
+    }
+
+    .customers .customer-boxs .customer-box .c-resim {
+        width: 32rem;
+    }
+
+    .contact .con-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+
+
+    .contact .con-row .col.right {
+        width: 34rem;
+    }
+
+    .contact .con-row .col.right .but {
+        margin: .5rem;
+    }
+
+    iframe {
+        width: 91%;
+    }
+
+    .blog-content .content .resim {
+        width: 33rem;
+    }
+
+    .content {
+        width: 33rem;
+        height: 37rem;
+    }
+
+    .footer .footer-container .search input {
+        padding: 2rem;
+    }
+
+    .footer .footer-container .f-links {
+        padding-right: 3rem;
+    }
+
+    .footer .footer-container .f-menu {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .footer .footer-container .f-menu .btn.f-btn {
+        font-size: 1rem;
+    }
+
+    .footer {
+        height: 66rem;
+    }
+
+    .footer .footer-container p {
+        font-size: 1rem;
+    }
+
+    .footer .footer-container p span {
+        font-size: 1rem;
+    }
+
+    .headers {
+        font-size: 3rem;
+    }
+
+    .home h3 {
+        font-size: 3rem;
+    }
+
+    .home .icerik {
+        width: 29rem;
+    }
+
+    .home p {
+        font-size: 1.5rem;
+    }
+
+    .customers .customer-boxs {
+        justify-content: center;
+    }
+
+    .products.container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .products .products-boxs {
+        justify-items: center;
+    }
+
+    .menus .box-con {
+        justify-items: center;
+    }
+
+
+}
+
+
+
+/* Responsive End */
